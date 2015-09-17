@@ -1,13 +1,115 @@
-div{
-	background-color:black;
+body{
+  background-image: url(back_sea.jpg);
+  /* Change to correct size image (ps) later */
+  background-attachment: fixed;
+  
 }
 
 
+
+.header{
+	display:inline-block;
+}
+
+p.tagline{
+	background-color: none;
+	color:black;
+	border-style: solid;
+	border-top:thick double black;
+	border-bottom: thick double black;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+
+}
+
+#left{
+	font-family:helvetica;
+	text-transform: uppercase;
+	font-style: bold;
+	font-size: 40px;
+	height:50px;
+	display: inline-block;
+	width:600px;
+	position: relative;
+	top:-100px;
+
+}
+
+
+.profpic {
+height:250px;
+width:250px;
+border-radius:250px;
+background-color:white;
+text-align:center;
+margin:auto;
+
+
+}
+
+#right{
+	height:50px;
+	display: inline-block;
+	position: relative;
+	top:-100px;
+	font-family: courier;
+	width: 300px;
+}
+
+
+#social-icons{
+	display: inline-block;
+	position:relative;
+	top: -120px;
+	height: 40px;
+	margin-left: 400px;
+}
+
+#thumbnail{
+	height: 40px;
+	width: 40px;
+
+}
+
+.plain{
+  color:white;
+  width: 400px;
+  height:140px;
+  border-radius: 10px;
+  background-color:black;
+  opacity: 0.6;
+  padding:10px;
+  font-family:helvetica;
+  font-size: 14px;
+  vertical-align: middle;
+
+}
 
 h1 {
-	font-family: Helvetica;
-	;
-
+	font-family:Helvetica;
+	font-weight: 200;
+	font-size: 33px;
+	color:black;	
 }
 
-p
+
+.giffeest{
+	display: inline-block;
+}
+
+.gifke{
+	
+	max-height: 250px;
+	max-width: auto;
+}
+
+
+
+
+
+
+
+
