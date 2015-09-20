@@ -1,115 +1,157 @@
-body{
+/***************
+** CSS RESET
+***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***************
+** CUSTOM STYLES
+***************/
+
+body {
   background-image: url(back_sea.jpg);
   /* Change to correct size image (ps) later */
   background-attachment: fixed;
-  
 }
 
+/**
+ * HEADER
+ */
 
-
-.header{
-	display:inline-block;
+#header {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: baseline;*/
+    position: relative;
 }
 
-p.tagline{
-	background-color: none;
-	color:black;
-	border-style: solid;
-	border-top:thick double black;
-	border-bottom: thick double black;
-	border-left: none;
-	border-right: none;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
-
+#header div {
+    margin-top: 110px;
 }
 
-#left{
-	font-family:helvetica;
-	text-transform: uppercase;
-	font-style: bold;
-	font-size: 40px;
-	height:50px;
-	display: inline-block;
-	width:600px;
-	position: relative;
-	top:-100px;
-
+#header div p {
+    text-align: center;
+    border-top: thick double black;
+    border-bottom: thick double black;
 }
 
-
-.profpic {
-height:250px;
-width:250px;
-border-radius:250px;
-background-color:white;
-text-align:center;
-margin:auto;
-
-
+#header div.header-left {
+    flex: 1 1 auto;
+    margin-right: 5px;
 }
 
-#right{
-	height:50px;
-	display: inline-block;
-	position: relative;
-	top:-100px;
-	font-family: courier;
-	width: 300px;
+#header div.header-left p {
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 40px;
+    line-height: 50px;
 }
 
-
-#social-icons{
-	display: inline-block;
-	position:relative;
-	top: -120px;
-	height: 40px;
-	margin-left: 400px;
+#header div.header-right {
+    flex: 1 9 auto;
+    margin-left: 5px;
 }
 
-#thumbnail{
+#header div.header-right p {
+    line-height: 50px;
+    border-top: thick double black;
+    border-bottom: thick double black;
+    font-family: courier;
+    text-align: left;
+}
+
+#header #profpic {
+    height:250px;
+    width:250px;
+    border-radius:250px;
+    background-color:white;
+    text-align:center;
+    margin:auto;
+}
+
+#header #social-icons {
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    height: 40px;
+}
+
+.thumbnail {
 	height: 40px;
 	width: 40px;
-
 }
 
-.plain{
-  color:white;
-  width: 400px;
-  height:140px;
-  border-radius: 10px;
-  background-color:black;
-  opacity: 0.6;
-  padding:10px;
-  font-family:helvetica;
-  font-size: 14px;
-  vertical-align: middle;
-
+@media screen and (max-width: 960px) {
+    #header div.header-left p {
+        font-size: 3vw;
+    }
 }
 
-h1 {
-	font-family:Helvetica;
-	font-weight: 200;
-	font-size: 33px;
-	color:black;	
+@media screen and (max-width: 800px) {
+    #header {
+        height: 160px;
+    }
+
+    #header div {
+        margin-top: 25px;
+    }
+
+    #header #social-icons {
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*bottom: 30px;*/
+        /*left: 10px;*/
+        /*height: 40px;*/
+    }
+
+    #header #profpic {
+        width: 100px;
+        height: 100px;
+        margin-top: 5px;
+    }
 }
-
-
-.giffeest{
-	display: inline-block;
-}
-
-.gifke{
-	
-	max-height: 250px;
-	max-width: auto;
-}
-
-
-
-
-
-
-
 
