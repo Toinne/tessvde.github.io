@@ -51,14 +51,36 @@ table {
 ***************/
 
 body {
-  background-image: url(back_sea.jpg);
+  /*background-image: url(back_sea.jpg);*/
+  background-color: white;
   /* Change to correct size image (ps) later */
   background-attachment: fixed;
 }
 
+.thumbnail {
+    height: 40px;
+    width: 40px;
+}
+
+html * {
+    font-family: helvetica;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: helvetica;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
 /**
- * HEADER
+ * Header
  */
+
 
 #header {
 	display: flex;
@@ -120,11 +142,6 @@ body {
     height: 40px;
 }
 
-.thumbnail {
-	height: 40px;
-	width: 40px;
-}
-
 @media screen and (max-width: 960px) {
     #header div.header-left p {
         font-size: 3vw;
@@ -153,5 +170,46 @@ body {
         height: 100px;
         margin-top: 5px;
     }
+}
+
+/**
+ * Wrapper
+*/
+
+#wrapper {
+    padding: 10px;
+}
+
+/**
+ * About
+ */
+
+#about {
+    margin-bottom: 25px;
+    padding: 30px 0;
+}
+
+/**
+ * Content
+ */
+
+#content {
+    margin-bottom: 25px;
+}
+
+#content div.giffeest {
+    display: flex;
+    justify-content: space-around;
+    border-top: thick double black;
+    border-bottom: thick double black;
+    padding: 10px 0;
+}
+
+#content div.giffeest div {
+   flex: 1 1 300px;
+}
+
+#content div.giffeest div img {
+   width: 100%;
 }
 
